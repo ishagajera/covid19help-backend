@@ -53,3 +53,6 @@ coverage.xml
 docs/_build/
 
 *.DS_Store
+
+app2.py
+upload_data.py
