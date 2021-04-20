@@ -8,6 +8,7 @@ from dateutil.tz import gettz
 #str(environ["MONGO_DB"])
 #str(environ["MONGO_COL"])
 
+print("App Starts")
 client = pymongo.MongoClient(str(environ["MONGO_CONN_URL"]))
 mydb = client[str(environ["MONGO_DB"])]
 mycol = mydb[str(environ["MONGO_COL"])]
