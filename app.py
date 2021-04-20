@@ -80,8 +80,11 @@ def get_info():
     if request.method == 'POST':
         #query_dict = {u'State':str(request.form['State']),u'Category':str(request.form['Category']),u'City':str(request.form['City'])}
         query_dict = {u'City':str(request.form['City'])}
+        print("Works here 1")
         mydoc = mycol.find(query_dict)
+        print("Works here 2")
         json_docs = [dumps(doc) for doc in mydoc]
+        print("Works here 3")
         response = app.response_class(
                     response=dumps(json_docs),
                     status=200,
