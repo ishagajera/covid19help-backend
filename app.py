@@ -11,6 +11,7 @@ from dateutil.tz import gettz
 client = pymongo.MongoClient(str(environ["MONGO_CONN_URL"]))
 mydb = client[str(environ["MONGO_DB"])]
 mycol = mydb[str(environ["MONGO_COL"])]
+print(client)
 
 
 
